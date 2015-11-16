@@ -1,29 +1,55 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="64" fill="white">
-  <circle cx="16" cy="3" r="0">
-    <animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite" begin="0" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" calcMode="spline" />
-  </circle>
-  <circle transform="rotate(45 16 16)" cx="16" cy="3" r="0">
-    <animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite" begin="0.125s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" calcMode="spline" />
-  </circle>
-  <circle transform="rotate(90 16 16)" cx="16" cy="3" r="0">
-    <animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite" begin="0.25s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" calcMode="spline" />
-  </circle>
-  <circle transform="rotate(135 16 16)" cx="16" cy="3" r="0">
-    <animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite" begin="0.375s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" calcMode="spline" />
-  </circle>
-  <circle transform="rotate(180 16 16)" cx="16" cy="3" r="0">
-    <animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite" begin="0.5s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" calcMode="spline" />
-  </circle>
-  <circle transform="rotate(225 16 16)" cx="16" cy="3" r="0">
-    <animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite" begin="0.625s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" calcMode="spline" />
-  </circle>
-  <circle transform="rotate(270 16 16)" cx="16" cy="3" r="0">
-    <animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite" begin="0.75s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" calcMode="spline" />
-  </circle>
-  <circle transform="rotate(315 16 16)" cx="16" cy="3" r="0">
-    <animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite" begin="0.875s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" calcMode="spline" />
-  </circle>
-  <circle transform="rotate(180 16 16)" cx="16" cy="3" r="0">
-    <animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite" begin="0.5s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" calcMode="spline" />
-  </circle>
+  <g transform="translate(16 3)"><circle transform="scale(0)" r="3"></circle></g>
+  <g transform="rotate(45 16 16) translate(16 3)"><circle transform="scale(0)" r="3"></circle></g>
+  <g transform="rotate(90 16 16) translate(16 3)"><circle transform="scale(0)" r="3"></circle></g>
+  <g transform="rotate(135 16 16) translate(16 3)"><circle transform="scale(0)" r="3"></circle></g>
+  <g transform="rotate(180 16 16) translate(16 3)"><circle transform="scale(0)" r="3"></circle></g>
+  <g transform="rotate(225 16 16) translate(16 3)"><circle transform="scale(0)" r="3"></circle></g>
+  <g transform="rotate(270 16 16) translate(16 3)"><circle transform="scale(0)" r="3"></circle></g>
+  <g transform="rotate(315 16 16) translate(16 3)"><circle transform="scale(0)" r="3"></circle></g>
+  <style type="text/css">
+    @keyframes loading-spinning-bubbles {
+        0% { transform: scale(0); }
+        25% { transform: scale(1); }
+        75% { transform: scale(0); }
+        100% { transform: scale(0); }
+    }
+
+    circle {
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-name: loading-spinning-bubbles;
+        animation-timing-function: cubic-bezier(0.2, 0.2, 0.4, 0.8);
+    }
+
+    g:nth-child(2) > circle {
+        animation-delay: 125ms;
+    }
+
+    g:nth-child(3) > circle {
+        animation-delay: 250ms;
+    }
+
+    g:nth-child(4) > circle {
+        animation-delay: 375ms;
+    }
+
+    g:nth-child(5) > circle {
+        animation-delay: 500ms;
+    }
+
+    g:nth-child(6) > circle {
+        animation-delay: 625ms;
+    }
+
+    g:nth-child(7) > circle {
+        animation-delay: 750ms;
+    }
+
+    g:nth-child(8) > circle {
+        animation-delay: 875ms;
+    }
+  </style>
 </svg>
