@@ -1,0 +1,43 @@
+@keyframes loading-spokes {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.1;
+    }
+}
+
+path {
+    animation-name: loading-spokes;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+path:nth-child(2) {
+    animation-delay: 125ms;
+}
+
+path:nth-child(3) {
+    animation-delay: 250ms;
+}
+
+path:nth-child(4) {
+    animation-delay: 375ms;
+}
+
+path:nth-child(5) {
+    animation-delay: 500ms;
+}
+
+path:nth-child(6) {
+    animation-delay: 625ms;
+}
+
+path:nth-child(7) {
+    animation-delay: 750ms;
+}
+
+path:nth-child(8) {
+    animation-delay: 875ms;
+}

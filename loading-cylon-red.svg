@@ -1,4 +1,5 @@
 <?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/css" href="loading-cylon-red.css"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 14 32 18" width="32" height="4" fill="#f20" preserveAspectRatio="none">
   <path opacity="0.8" transform="translate(0 0)" d="M2 14 V18 H6 V14z">
@@ -7,26 +8,4 @@
   </path>
   <path opacity="0.25" transform="translate(0 0)" d="M0 14 V18 H8 V14z">
   </path>
-  <style type="text/css">
-    @keyframes loading-cylon-red {
-        0% { transform: translateX(0); }
-        50% { transform: translateX(24px); }
-        100% { transform: translateX(0); }
-    }
-
-    path {
-        animation-name: loading-cylon-red;
-        animation-timing-function: cubic-bezier(0.2, 0.2, 0.4, 0.8);
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-    }
-
-    path:nth-child(2) {
-        animation-delay: 100ms;
-    }
-
-    path:nth-child(3) {
-        animation-delay: 200ms;
-    }
-  </style>
 </svg>
