@@ -1,9 +1,9 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="white">
-  <path transform="translate(0 0)" d="M0 12 V20 H4 V12z"></path>
-  <path opacity="0.5" transform="translate(0 0)" d="M0 12 V20 H4 V12z"></path>
-  <path opacity="0.25" transform="translate(0 0)" d="M0 12 V20 H4 V12z"></path>
+  <path class="loading-cylon cylon-1" transform="translate(0 0)" d="M0 12 V20 H4 V12z"></path>
+  <path class="loading-cylon cylon-2" opacity="0.5" transform="translate(0 0)" d="M0 12 V20 H4 V12z"></path>
+  <path class="loading-cylon cylon-3" opacity="0.25" transform="translate(0 0)" d="M0 12 V20 H4 V12z"></path>
   <style type="text/css">
     @keyframes loading-cylon {
         0% { transform: translateX(0); }
@@ -11,18 +11,18 @@
         60% { transform: translateX(0); }
     }
 
-    path {
+    path.loading-cylon {
         animation-name: loading-cylon;
         animation-timing-function: cubic-bezier(0.2, 0.2, 0.4, 0.8);
         animation-duration: 1.5s;
         animation-iteration-count: infinite;
     }
 
-    path:nth-child(2) {
+    path.loading-cylon.cylon-2 {
         animation-delay: 100ms;
     }
 
-    path:nth-child(3) {
+    path.loading-cylon.cylon-3 {
         animation-delay: 200ms;
     }
   </style>

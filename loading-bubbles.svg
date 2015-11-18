@@ -1,9 +1,9 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="white">
-  <g transform="translate(8 16)"><circle transform="scale(0)" r="4"></circle></g>
-  <g transform="translate(16 16)"><circle transform="scale(0)" r="4"></circle></g>
-  <g transform="translate(24 16)"><circle transform="scale(0)" r="4"></circle></g>
+  <g transform="translate(8 16)"><circle class="loading-bubbles bubble-1" transform="scale(0)" r="4"></circle></g>
+  <g transform="translate(16 16)"><circle class="loading-bubbles bubble-2" transform="scale(0)" r="4"></circle></g>
+  <g transform="translate(24 16)"><circle class="loading-bubbles bubble-3" transform="scale(0)" r="4"></circle></g>
   <style type="text/css">
     @keyframes loading-bubbles {
         0% { transform: scale(0); }
@@ -12,18 +12,18 @@
         100% { transform: scale(0); }
     }
 
-    circle {
+    circle.loading-bubbles {
         animation-duration: 1.2s;
         animation-iteration-count: infinite;
         animation-name: loading-bubbles;
         animation-timing-function: cubic-bezier(0.2, 0.2, 0.4, 0.8);
     }
 
-    g:nth-child(2) > circle {
+    circle.loading-bubbles.bubble-2 {
         animation-delay: 0.3s;
     }
 
-    g:nth-child(3) > circle {
+    circle.loading-bubbles.bubble-3 {
         animation-delay: 0.6s;
     }
   </style>

@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="white">
-  <g transform="translate(2 16)"><path d="M 0 -4 V 4 H 4 V -4 z"></path></g>
-  <g transform="translate(8 16)"><path d="M 0 -4 V 4 H 4 V -4 z"></path></g>
-  <g transform="translate(14 16)"><path d="M 0 -4 V 4 H 4 V -4 z"></path></g>
-  <g transform="translate(20 16)"><path d="M 0 -4 V 4 H 4 V -4 z"></path></g>
-  <g transform="translate(26 16)"><path d="M 0 -4 V 4 H 4 V -4 z"></path></g>
+  <g transform="translate(2 16)"><path class="loading-bars bar-1" d="M 0 -4 V 4 H 4 V -4 z"></path></g>
+  <g transform="translate(8 16)"><path class="loading-bars bar-2" d="M 0 -4 V 4 H 4 V -4 z"></path></g>
+  <g transform="translate(14 16)"><path class="loading-bars bar-3" d="M 0 -4 V 4 H 4 V -4 z"></path></g>
+  <g transform="translate(20 16)"><path class="loading-bars bar-4" d="M 0 -4 V 4 H 4 V -4 z"></path></g>
+  <g transform="translate(26 16)"><path class="loading-bars bar-5" d="M 0 -4 V 4 H 4 V -4 z"></path></g>
   <style type="text/css">
     @keyframes loading-bars {
         0% {
@@ -25,26 +25,26 @@
         }
     }
 
-    path {
+    path.loading-bars {
         animation-name: loading-bars;
         animation-duration: 1.2s;
         animation-iteration-count: infinite;
         animation-timing-function: cubic-bezier(0.2, 0.2, 0.4, 0.8);
     }
 
-    g:nth-child(2) > path {
+    path.loading-bars.bar-2 {
         animation-delay: 0.2s;
     }
 
-    g:nth-child(3) > path {
+    path.loading-bars.bar-3 {
         animation-delay: 0.4s;
     }
 
-    g:nth-child(4) > path {
+    path.loading-bars.bar-4 {
         animation-delay: 0.6s;
     }
 
-    g:nth-child(5) > path {
+    path.loading-bars.bar-5 {
         animation-delay: 0.8s;
     }
   </style>
